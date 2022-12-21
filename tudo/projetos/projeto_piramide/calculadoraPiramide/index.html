@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Teste</title>
+</head>
+<body>
+    <form action="#" method="POST" id="formcad" class="row g-3">
+        <div class="col-md-6">
+          <label for="inputNum1" class="form-label">Medida da largura</label>
+          <input type="number" class="form-control" id="lado" placeholder="Insira a medida:" min="0" oninput="validity.valid||(value='');" required>
+        </div>
+
+        <div class="col-md-6">
+            <label for="inputNum2" class="form-label">Medida da altura</label>
+            <input type="number" class="form-control" id="altura" placeholder="Insira a medida:" min="0" oninput="validity.valid||(value='');" required>
+          </div>
+
+        <div id="vazio"></div>
+
+        <input type="button" value="Calcular" class="btn btn-primary my-1" id="botao">
+
+        <div class="col-md-12">
+            <label for="inputName" class="form-label">Valor do volume:</label>
+            <input type="text" class="form-control" id="resultVolume" disabled required>
+        </div>
+
+        <div class="col-md-12">
+            <label for="inputName" class="form-label">Valor da área:</label>
+            <input type="text" class="form-control" id="resultArea" disabled required>
+        </div>
+
+    </form>
+</body>
+</html>
