@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+
+
+:root{
+    --body: #def5e5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------- CABEÇALHO ---------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+header{
+    background: linear-gradient(180deg, #b5f6d7c1 0%, #c7f3df42 100%);
+    backdrop-filter: blur(4px);
+    display: flow-root;
+    width: 100%;
+    padding: 1vw;
+    padding-left: 6%;
+    transition: 0.2s;
+    box-shadow: 0px -3vw 8vw 0.7vw #000000bf;
+}
+
+p{
+    margin: 0;
+}
+
+#icongithub{
+    border-radius: 50%;
+    float: left;
+    width: 6vw;
+    justify-content: center;
+    filter: brightness(0);
+    transition: 0.2s;
+}
+
+#icongithub:hover{
+    transform: scale(1.1);
+}
+
+.itemheader{
+    text-decoration: none;
+    color: #227f3e;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 2vw;
+    text-shadow: 0.1vw 0.1vw 0.3vw #00000056;
+    border-bottom: 0.3vw solid #1cac6b;
+    border-radius: 0.3vw;
+    width: 13vw;
+    float: right;
+    margin-top: 1.5vw;
+    padding: 0.5vw;
+    margin-right: 3vw;
+    transition: 0.2s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.itemheader:hover{
+    transform: scale(1.1);
+    filter: contrast(50%);
+}
+
+.iconheader{
+    justify-content: center;
+    margin: auto 1vw auto 0;
+    width: 4vw;
+    height: 2.5vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------- CORPO ----------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    background: url(../img/fundo.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+#sobre{
+    border-radius: 4vw;
+    backdrop-filter: blur(0.8vh);
+    margin: 9vw auto 7vw auto;
+    width: 60vw;
+    height: 46vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+#fundofoto{
+    width: 60vw;
+    height: 17vw;
+    border-top-left-radius: 4vw;
+    border-top-right-radius: 4vw;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#fotoautor{
+    border-radius: 100vw;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: 0.2s;
+    margin-top: calc(0% - 9vw);
+    height: 18vw;
+    width: 18vw;
+}
+
+#fotoautor:hover{
+    transform: scale(1.1);
+}
+
+#informacoes{
+    font-size: 1.7vw;
+    font-family: 'Raleway', sans-serif;
+    margin: 4vw 3vw 0 3vw;
+    text-align: justify;
+}
+
+#sobre, #fundofoto, #fotoautor{
+    box-shadow: 0 0 0 0.2vw #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------- RESPONSIVIDADE ---------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px){
+    header{
+        height: 11vw;
+    }
+
+    #icongithub{
+        width: 7vw;
+        margin-top: 1vw;
+    }
+    
+    .itemheader{
+        width: 17vw;
+        margin-top: 2.1vw;
+        font-size: 3vw;
+    }
+
+    .iconheader{
+        width: 4vw;
+        height: 3vw;
+    }
+    
+    #sobre{
+        height: 44vw;
+        width: 55vw;
+    }
+    
+    #fundofoto{
+        height: 16vw;
+        width: 55vw;
+    }
+
+    #fotoautor{
+        margin-top: calc(0% - 8vw);
+        height: 16vw;
+        width: 16vw;
+    }
+
+    #informacoes{
+        margin: 3vw 3vw 1vw 3vw;
+    }
+}
+
+@media (max-width: 700px){
+    header{
+        height: 11vw;
+    }
+
+    #icongithub{
+        width: 8vw;
+        margin-top: 0.5vw;
+    }
+    
+    .itemheader{
+        width: 20vw;
+        margin-top: 2.1vw;
+        font-size: 3.8vw;
+    }
+
+    .iconheader{
+        width: 5vw;
+        height: 3.5vw;
+    }
+
+    #sobre{
+        border-radius: 6vw;
+        height: 67vw;
+        width: 60vw;
+    }
+
+    #fundofoto{
+        border-top-left-radius: 6vw;
+        border-top-right-radius: 6vw;
+        height: 20vw;
+        width: 60vw;
+    }
+
+    #fotoautor{
+        margin-top: calc(0% - 10vw);
+        height: 20vw;
+        width: 20vw;
+    }
+
+    #informacoes{
+        font-size: 2.5vw;
+        margin: 4vw 3vw 1vw 3vw;
+    }
+}
+
+@media (max-width: 550px){ 
+    header{
+        height: 11vw;
+    }
+
+    #icongithub{
+        width: 8vw;
+        margin-top: 0.5vw;
+    }
+    
+    .itemheader{
+        width: 20vw;
+        margin-top: 2.1vw;
+        font-size: 3.8vw;
+    }
+
+    .iconheader{
+        width: 5vw;
+        height: 3.5vw;
+    }
+
+    #sobre{
+        height: 76vw;
+        width: 70vw;
+    }
+
+    #fundofoto{
+        height: 22vw;
+        width: 70vw;
+    }
+
+    #fotoautor{
+        margin-top: calc(0% - 10vw);
+        height: 20vw;
+        width: 20vw;
+    }
+
+    #informacoes{
+        font-size: 3vw;
+        margin: 4vw 3vw 1vw 3vw;
+    }
+}
+
+@media (max-width: 400px){ 
+    header{
+        height: 13vw;
+    }
+
+    #icongithub{
+        width: 10vw;
+        margin-top: 0.5vw;
+    }
+    
+    .itemheader{
+        border-bottom: 0.45vw solid #1cac6b;
+        width: 26vw;
+        margin-top: 2.7vw;
+        font-size: 4.5vw;
+    }
+
+    .iconheader{
+        width: 7vw;
+        height: 4.5vw;
+    }
+
+    #sobre{
+        margin-top: 12vw;
+        height: 93vw;
+        width: 70vw;
+    }
+
+    #fotoautor{
+        margin-top: calc(0% - 12vw);
+        height: 25vw;
+        width: 25vw;
+    }
+
+    #informacoes{
+        margin: 5vw 5vw 0 5vw;
+        font-size: 3.5vw;
+    }
+}
